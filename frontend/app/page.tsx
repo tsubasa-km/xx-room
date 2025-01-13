@@ -1,10 +1,12 @@
-import Link from "next/link";
+import { Button, Container } from "@mui/material";
 
 export default function Home() {
   return (
     <div>
-      <Link href="/create-room">部屋を作成</Link>
-      <Link href="/join-room">部屋に参加</Link>
+      <Container>
+        <Button variant="contained" href="/create-room">部屋を作成</Button>
+        <Button variant="contained" href="/join-room">部屋に参加</Button>
+      </Container>
     </div>
   );
 }
